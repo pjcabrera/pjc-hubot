@@ -1,3 +1,3 @@
 @echo off
 
-npm install && node_modules\.bin\hubot.cmd --name "PJC-Random-Bot" %* 
+npm install && node_modules\.bin\hubot.cmd --name "pjcbot" %* 
