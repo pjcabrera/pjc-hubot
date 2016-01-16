@@ -1,8 +1,5 @@
 module.exports = (robot) ->
-  lulz = ['lol', 'rofl', 'lmao']
-
-  robot.respond /lulz/i, (res) ->
-    res.send res.random lulz
+  lulz = ['lol', 'rofl', 'lmao', 'haha nice try', '**snort**', 'you wish']
 
   robot.hear /^hubot:? (.+)/i, (res) ->
     response = "Sorry, I'm a diva and only respond to #{robot.name}"
