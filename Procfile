@@ -1,1 +1,1 @@
-web: bin/hubot -a slack --name pjcbot
+web: bin/hubot -a slack --name funbot
