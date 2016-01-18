@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   hubot eightball <query> - Ask the magic eight ball a question
+#   eightball|eight ball|eight-ball|8ball <query> - Ask the magic eight ball a question
 #
 # Author:
 #   ryanatwork
@@ -37,5 +37,5 @@ ball = [
 ]
 
 module.exports = (robot) ->
-  robot.respond /(eightball|8ball)(.*)/i, (msg) ->
+  robot.hear /(eight(ball| ball|-ball)|8ball)(.*)/i, (msg) ->
     msg.reply msg.random ball

@@ -8,9 +8,8 @@ module.exports = (robot) ->
     return
 
   robot.listenerMiddleware (context, next, done) ->
-    if ~context.response.message.text.indexOf('funbot help')
+    if ~context.response.message.text.indexOf('bot help')
       context.response.send context.response.random lulz
       context.response.send "I'm sorry, @#{context.response.message.user.name}, I can't let you do that."
-      done()
     else
       next()
