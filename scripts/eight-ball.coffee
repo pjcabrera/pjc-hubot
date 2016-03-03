@@ -14,28 +14,24 @@
 #   ryanatwork
 
 ball = [
-  "It is certain",
-  "It is decidedly so",
-  "Without a doubt",
-  "Yes – definitely",
-  "You may rely on it",
-  "As I see it, yes",
-  "Most likely",
-  "Outlook good",
-  "Signs point to yes",
-  "Yes",
-  "Reply hazy, try again",
-  "Ask again later",
-  "Better not tell you now",
-  "Cannot predict now",
-  "Concentrate and ask again",
-  "Don't count on it",
-  "My reply is no",
-  "My sources say no",
-  "Outlook not so good",
-  "Very doubtful",
+  "http://pjtrix.com/funbot/8ball/8ball01.png",
+  "http://pjtrix.com/funbot/8ball/8ball02.png",
+  "http://pjtrix.com/funbot/8ball/8ball03.png",
+  "http://pjtrix.com/funbot/8ball/8ball04.png",
+  "http://pjtrix.com/funbot/8ball/8ball05.png",
+  "http://pjtrix.com/funbot/8ball/8ball06.png",
+  "http://pjtrix.com/funbot/8ball/8ball07.png",
+  "http://pjtrix.com/funbot/8ball/8ball08.png",
+  "http://pjtrix.com/funbot/8ball/8ball09.png",
+  "http://pjtrix.com/funbot/8ball/8ball10.png",
+  "http://pjtrix.com/funbot/8ball/8ball11.png",
+  "http://pjtrix.com/funbot/8ball/8ball12.png",
+  "http://pjtrix.com/funbot/8ball/8ball13.png",
+  "http://pjtrix.com/funbot/8ball/8ball14.png",
+  "http://pjtrix.com/funbot/8ball/8ball15.png",
+  "http://pjtrix.com/funbot/8ball/8ball16.png"
 ]
 
 module.exports = (robot) ->
-  robot.hear /(eight(ball| ball|-ball)|8ball)(.*)/i, (msg) ->
+  robot.hear /(eight(ball| ball|-ball)|8ball|should I|I wonder if I should)(.*)/i, (msg) ->
     msg.reply msg.random ball
