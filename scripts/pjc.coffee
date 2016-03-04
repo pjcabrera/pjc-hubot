@@ -51,7 +51,7 @@ module.exports = (robot) ->
   )
 
   robot.listenerMiddleware (context, next, done) ->
-    if ~context.response.message.text.indexOf('bot help')
+    if context.response.message.text.indexOf('funbot help') == 0
       context.response.send context.response.random lulz
       context.response.send "I'm sorry, @#{context.response.message.user.name}, I can't let you do that."
     else
