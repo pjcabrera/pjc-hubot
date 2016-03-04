@@ -8,10 +8,11 @@
 #   None
 #
 # Commands:
-#   eightball|eight ball|eight-ball|8ball <query> - Ask the magic eight ball a question
+#   eightball|eight ball|eight-ball|8ball|8 ball| 8-ball|should I|I wonder if I should <query> - Ask the magic eight ball a question
 #
 # Author:
 #   ryanatwork
+#   pjcabrera
 
 ball = [
   "http://pjtrix.com/funbot/8ball/8ball01.png",
@@ -33,5 +34,5 @@ ball = [
 ]
 
 module.exports = (robot) ->
-  robot.hear /(eight(ball| ball|-ball)|8ball|should I|I wonder if I should)(.*)/i, (msg) ->
+  robot.hear /((eight|8)(ball| ball|-ball)|should I|I wonder if I should)(.*)/i, (msg) ->
     msg.reply msg.random ball
